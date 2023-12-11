@@ -9,5 +9,17 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+        setTimeout(()=>{
+            if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
+
+            } else {
+                let hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?ab51e124c49e16398f7c0131d7bca03d";
+                let s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            }
+        }, 1000)
+    </script>
   </body>
 </html>
