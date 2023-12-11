@@ -2,7 +2,7 @@
     <div id="app">
         <div class="header">
             <div class="search-bar">
-                <input ref="refInput" placeholder="class 关键字" type="text" v-model="searchWord">
+                <input ref="refInput" placeholder="关键字" type="text" v-model="searchWord">
                 <span class="tip">点击图标，复制组件 icon 名到剪贴板</span>
                 <a class="tip" target="_blank" href="https://kylebing.cn/tools/icons"> -> 旧版 Element 图标</a>
             </div>
