@@ -1,0 +1,28 @@
+{
+  "name": "icon-el-plus-selector",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "projectName": "icon-el-plus-selector",
+  "projectUpdateDate": "2023-11-14",
+  "email": "kylebing@163.com",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "element-plus": "^2.4.2",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.4",
+    "clipboard": "^2.0.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.69.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}

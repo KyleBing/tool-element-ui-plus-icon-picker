@@ -1,0 +1,180 @@
+@import "reset";
+@import "variables";
+@import "gutter";
+@import "animate";
+@import "utility";
+
+$main: #409EFF;
+$color-border:  #dadada;
+$header-bg: #f3f3f3;
+
+$text-main      : #333;
+$text-subtitle  : #666;
+$text-comment   : #999;
+
+.unselect{
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+#app{
+  position: relative;
+}
+
+.tip{
+  @extend .unselect;
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 0.9rem;
+  color: $text-comment;
+  &:hover{
+    color: $text-subtitle;
+  }
+}
+
+$height-input: 30px;
+
+.header{
+  //border-bottom: 1px solid $color-border;
+  z-index: 999;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: $header-bg;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar{
+  input{
+    width: 15rem;
+    line-height: $height-input;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border: 1px solid $color-border;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    &:focus{
+      border-color: $main;
+      outline: none;
+    }
+  }
+}
+
+.switch-bar{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  .switch{
+    margin-right: 30px;
+    font-size: 0.8rem;
+  }
+}
+
+.icon-container{
+  padding: 30px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+.icon-item{
+  margin: 0 3px 3px 0;
+  cursor: pointer;
+  text-align: center;
+  width: 5rem;
+  font-size: 2rem;
+  color: $text-main;
+  padding: 5px;
+  @include border-radius(5px);
+  border: 1px solid transparent;
+  transition: background 1s, color 1s;
+  i{
+    transition: inherit;
+  }
+  p{
+    color: transparent;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 5px 0 0 0 ;
+    font-size: 8px;
+    transition: inherit;
+  }
+
+  &:hover{
+    border-color: $main;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    p{
+      color: inherit;
+      transition: color 0s;
+      text-overflow: clip;
+      overflow: visible;
+    }
+    transition: background 1s, color 1s;
+  }
+  &:active{
+    background-color: $main;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);
+    transition: all 0s;
+  }
+}
+.icon{
+  display: block;
+}
+
+label{
+  cursor: pointer;
+}
+
+
+
+input[type=radio]{
+  display: none;
+}
+
+input + label {
+  font-size: 1rem;
+  position: relative;
+  display: block;
+  padding: 5px 8px;
+  background-color: white;
+  border: 1px dashed $color-border;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  @extend .unselect;
+  .badge{
+    z-index: 100;
+    display: block;
+    position: absolute;
+    color: $text-main;
+    background-color: white;
+    font-size: 0.7rem;
+    transform: translateX(50%) translateY(-50%);
+    right: 0;
+    top: 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid $color-border;
+    padding: 2px 5px;
+  }
+}
+
+input:checked + label {
+  color: white;
+  background-color: $main;
+  border: 1px solid $main;
+}
+
+
+
