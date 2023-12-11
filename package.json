@@ -8,7 +8,8 @@
   "email": "kylebing@163.com",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
+    "build2": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

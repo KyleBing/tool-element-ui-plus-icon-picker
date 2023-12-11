@@ -22,7 +22,7 @@
             <div :data-clipboard-text="item.clipText"
                  class="icon-item"
                  v-for="item in iconsShowing"
-                 :key="item"
+                 :key="item.name"
             >
                 <el-icon>
                     <component :is="item.name"/>
