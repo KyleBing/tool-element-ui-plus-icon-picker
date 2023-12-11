@@ -38,7 +38,7 @@
 
 import {onMounted, onBeforeMount, ref, computed, watch} from "vue";
 import {iconNameList} from "./main.ts";
-import * as ClipboardJS from 'clipboard'
+import ClipboardJS from "clipboard"
 const refInput = ref()
 
 onBeforeMount(() => {
