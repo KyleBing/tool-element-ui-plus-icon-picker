@@ -32,6 +32,11 @@ $text-comment   : #999;
     color: $text-subtitle;
   }
 }
+a.tip{
+  &:hover{
+    text-decoration: underline;
+  }
+}
 
 $height-input: 30px;
 
