@@ -4,7 +4,7 @@
             <div class="search-bar">
                 <input ref="refInput" placeholder="关键字" type="text" v-model="searchWord">
                 <span class="tip">点击图标，复制组件 icon 名到剪贴板</span>
-                <a class="tip" target="_blank" href="https://kylebing.cn/tools/icons"> -> 旧版 Element 图标</a>
+                <a class="tip" target="_blank" href="http://kylebing.cn/tools/icons"> -> 旧版 Element 图标</a>
             </div>
 
             <div class="switch-bar">
